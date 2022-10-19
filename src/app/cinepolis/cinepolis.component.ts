@@ -31,7 +31,7 @@ export class CinepolisComponent implements OnInit {
 
     if(this.cantidadDeboletos > 3 ){
       if(this.cantidadDeboletos > 5){
-        precio = (esMiembro ? precio* 0.65 : precio*0.85)  
+        precio = (esMiembro ? precio* 0.85 : precio*0.90)  
         console.log('====================================');
         console.log(precio);
         console.log('====================================');
@@ -45,7 +45,7 @@ export class CinepolisComponent implements OnInit {
     }
     
     
-    if( this.cantidadDeboletos >= (this.cantidadCompradores*7)) {
+    if( this.cantidadDeboletos > (this.cantidadCompradores*7)) {
       console.log('==================================== bletos disp');
       console.log(this.cantidadCompradores*7);
       console.log('====================================');
